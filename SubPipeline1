@@ -8,7 +8,7 @@ pipeline {
       }
       stage ('Run a script') {
         steps {
-          sh "test.sh"
+          sh "/var/jenkins_home/test.sh"
         }
       }
   }
