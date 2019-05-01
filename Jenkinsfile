@@ -6,11 +6,13 @@ pipeline {
         stage ('Build sub pipeline1') {
           steps {
             echo "Building Sub pipeline1"
+            build "SubPipeline1"
             }
         }
         stage ('Build sub pipeline2') {
           steps {
             echo "Building Sub pipeline2"
+            build "SubPipeline2"
           }
         }
       }
