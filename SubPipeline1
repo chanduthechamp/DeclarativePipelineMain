@@ -4,13 +4,12 @@ pipeline {
       stage ('Say Hello') {
         steps {
           echo "Hello from sub pipeline 1"
-          }
+        }
       }
       stage ('Run a script') {
         steps {
           sh "test.sh"
         }
       }
-    }
   }
 }
