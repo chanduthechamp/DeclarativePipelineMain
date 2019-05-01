@@ -1,0 +1,16 @@
+pipeline {
+  agent any
+  stages {
+      stage ('Say Hello 2') {
+        steps {
+          echo "Hello from sub pipeline 2"
+          }
+      }
+      stage ('Run another command') {
+        steps {
+          echo "Chill guys"
+        }
+      }
+    }
+  }
+}
